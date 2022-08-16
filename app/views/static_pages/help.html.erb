@@ -1,0 +1,8 @@
+<% provide :title, t("help") %>
+<h1><%= t ".welcome" %></h1>
+<p>
+  <%= t ".first_intro" %>
+  <u><%= link_to t(".help_link"), Settings.links.rails_help %></u>
+  <%= t ".second_intro" %>
+  <u><%= link_to t(".book_link"), Settings.links.rails_book %></u>
+</p>
