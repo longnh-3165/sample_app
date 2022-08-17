@@ -49,3 +49,14 @@ vi:
       title: "Đăng ký"
       welcome: "Đăng ký"
       first_intro: "Đây sẽ là trang đăng ký cho người dùng mới."
+      name: "Tên"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận lại mật khẩu"
+      submit: "Tạo tài khoản"
+    create:
+      success_message: "Chào mừng đến với Ứng dụng mẫu!"
+      failure_message: "Đăng ký nguời dùng thất bại"
+  shared:
+    error_messages:
+      prefix: "Bạn có %{err_count} "
+      error: "Lỗi"

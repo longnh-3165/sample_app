@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-
   validates :name, presence: true,
             length: {maximum: Settings.digits.length_name_max_50}
   validates :email, presence: true,
