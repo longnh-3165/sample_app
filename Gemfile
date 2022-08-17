@@ -11,6 +11,7 @@ gem "sass-rails", ">= 6"
 gem "turbolinks", "~> 5"
 gem "bootsnap", ">= 1.4.4", require: false
 gem "i18n"
+gem "bcrypt", "3.1.13"
 gem "webpacker", "~> 5.0"
 gem "jbuilder", "~> 2.7"
 gem "config"
