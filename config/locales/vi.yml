@@ -9,7 +9,7 @@ vi:
     vi: "Tiếng Việt"
   layouts:
     header:
-      logo: "Sample App"
+      logo: "Ứng Dụng Đơn Giản"
       home: "Trang chủ"
       help: "Trợ giúp"
       log_in: "Đăng nhập"
