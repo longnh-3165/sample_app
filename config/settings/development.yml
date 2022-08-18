@@ -4,6 +4,9 @@ links:
   rails_home: "https://rubyonrails.org/"
   rails_author: "https://www.michaelhartl.com/"
 
+gravatar:
+  url: "https://secure.gravatar.com/avatar"
+
 digits:
   length_name_max_50: 50
   length_email_max_255: 255
