@@ -13,6 +13,11 @@ en:
       home: "Home"
       help: "Help"
       log_in: "Log in"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log out"
     footer:
       tutorial_author: "by Michael Hartl"
       about: "About"
@@ -58,3 +63,13 @@ en:
     error_messages:
       prefix: "The form contains %{err_count} "
       error: "error"
+  sessions:
+    new:
+      title: "Log in"
+      welcome: "Log in"
+      submit: "Log in"
+      email_label: "Email"
+      new_question: "New user?"
+      password_label: "Password"
+    create:
+      failure_message: "Invalid email/password combination"
