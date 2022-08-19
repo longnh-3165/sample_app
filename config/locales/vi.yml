@@ -9,10 +9,15 @@ vi:
     vi: "Tiếng Việt"
   layouts:
     header:
-      logo: "Ứng Dụng Đơn Giản"
+      logo: "Sample App"
       home: "Trang chủ"
       help: "Trợ giúp"
       log_in: "Đăng nhập"
+      users: "Người dùng"
+      account: "Account"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      log_out: "Đăng xuất"
     footer:
       tutorial_author: "bởi Michael Hartl"
       about: "Thông tin"
@@ -60,3 +65,13 @@ vi:
     error_messages:
       prefix: "Bạn có %{err_count} "
       error: "Lỗi"
+  sessions:
+    new:
+      title: "Đăng nhập"
+      welcome: "Đăng nhập"
+      submit: "Đăng nhập"
+      email_label: "Email"
+      new_question: "Người dùng mới?"
+      password_label: "Mật khẩu"
+    create:
+      failure_message: "Sai email hoặc mật khẩu rồi vui lòng thử lại"
