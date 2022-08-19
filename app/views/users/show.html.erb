@@ -5,6 +5,10 @@
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %>
+        <%= @user.email %>
+        <% if can_delete_user? @user %>
+        <%= link_to t(".delete"), @user, method: :delete, data: {confirm: t(".delete_confirmation")} %>
+        <% end %>
       </h1>
     </section>
   </aside>

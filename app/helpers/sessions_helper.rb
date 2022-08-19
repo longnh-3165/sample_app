@@ -15,6 +15,18 @@ module SessionsHelper
     end
   end
 
+  def current_user? user
+    user && user == current_user
+  end
+
+  def is_admin?
+    current_user.admin?
+  end
+
+  def can_delete_user? user
+    current_user.admin? && !current_user?(user)
+  end
+
   def logged_in?
     current_user.present?
   end
