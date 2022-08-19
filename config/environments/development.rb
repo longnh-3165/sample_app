@@ -71,6 +71,21 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  # Uncomment if you wish to allow Action Cable access from any origin.
-  # config.action_cable.disable_request_forgery_protection = true
+  # Allow connections to local server
+  config.hosts.clear
+  config.action_mailer.delivery_method = :smtp
+  host = ENV["host"]
+  config.action_mailer.default_url_options = {
+    host: host,
+    protocol: "http"
+  }
+
+  ActionMailer::Base.smtp_settings = {
+    address: ENV["mail_address"],
+    port: ENV["mail_port"],
+    authentication: :cram_md5,
+    user_name: ENV["mail_user_name"],
+    password: ENV["mail_user_password"],
+    enable_starttls_auto: true
+  }
 end
