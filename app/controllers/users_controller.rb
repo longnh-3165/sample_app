@@ -4,7 +4,10 @@ class UsersController < ApplicationController
   before_action :logged_in_user, except: %i(create new)
   before_action :can_is_admin?, only: :destroy
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.microposts.newest,
+                              items: Settings.digits.size_of_page
+  end
 
   def index
     @pagy, @users = pagy User.activated.sort_name,
@@ -56,14 +59,6 @@ class UsersController < ApplicationController
 
     flash[:danger] = t ".not_found"
     redirect_to root_path
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    flash[:danger] = t ".not_logged"
-    store_location
-    redirect_to login_url
   end
 
   def can_is_admin?

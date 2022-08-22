@@ -12,7 +12,15 @@ digits:
   length_name_max_50: 50
   length_email_max_255: 255
   length_password_min_6: 6
-  size_of_page: 2
+  size_of_page: 5
   expired_reset_password_time: 24
+  length_content_max_140: 140
+  length_microposts: 50
+  range_500: [500, 500]
+
+image:
+  max_size: 5
+  accept_format: ["image/jpeg", "image/gif", "image/png"]
+  accept_format_html: "image/jpeg,image/gif,image/png"
 regex:
   email: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/'
