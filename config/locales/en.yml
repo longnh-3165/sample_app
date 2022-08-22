@@ -7,6 +7,10 @@ en:
   application:
     en: "English"
     vi: "Vietnamese"
+  users:
+    not_logged: "Please log in."
+    not_found: "User not found"
+    unauthorization: "You don't have permission to do this action"
   layouts:
     header:
       logo: "Sample App"
@@ -48,6 +52,12 @@ en:
       second_intro: "To get help on this sample app, see the"
       book_link: "Ruby on Rails Tutorial book"
   users:
+    index:
+      title: "All users"
+      welcome: "All users"
+    show:
+      delete: "Delete"
+      delete_confirmation: "You sure?"
     new:
       title: "Sign up"
       welcome: "Sign up"
@@ -56,9 +66,21 @@ en:
       password: "Password"
       password_confirmation: "Password Confirmation"
       submit: "Create my account"
+    edit:
+      title: "Update User"
+      welcome: "Update User"
+      first_intro: "This will be a edit page for current users."
+      name: "Name"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+      change: "Change"
+      submit: "Update my account"
     create:
       success_message: "Welcome to the Sample App!"
       failure_message: "Sign up failed!"
+    update:
+      success_message: "Update successful !"
+      failure_message: "Update failed!"
   shared:
     error_messages:
       prefix: "The form contains %{err_count} "

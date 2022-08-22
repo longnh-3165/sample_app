@@ -1,0 +1,4 @@
+<li>
+  <%= gravatar_for user, size: Settings.gravatar.users_size %>
+  <%= link_to user.name, user_path(user) %>
+</li>

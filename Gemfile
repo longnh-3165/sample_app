@@ -3,27 +3,29 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.7.6"
 
+gem "bcrypt", "3.1.13"
+gem "bootsnap", ">= 1.4.4", require: false
+gem "bootstrap-sass", "3.4.1"
+gem "config"
+gem "faker"
+gem "i18n"
+gem "jbuilder", "~> 2.7"
 gem "mysql2", "~> 0.5"
+gem "pagy"
 gem "puma", "~> 5.0"
 gem "rails", "~> 6.1.6", ">= 6.1.6.1"
-gem "bootstrap-sass", "3.4.1"
 gem "sass-rails", ">= 6"
 gem "turbolinks", "~> 5"
-gem "bootsnap", ">= 1.4.4", require: false
-gem "i18n"
-gem "bcrypt", "3.1.13"
 gem "webpacker", "~> 5.0"
-gem "jbuilder", "~> 2.7"
-gem "config"
 group :development, :test do
   gem "pry", "~> 0.14.0"
 end
 
 group :development do
   gem "listen", "~> 3.3"
-  gem "web-console", ">= 4.1.0"
   gem "rack-mini-profiler", "~> 2.0"
   gem "spring"
+  gem "web-console", ">= 4.1.0"
 end
 
 group :test do

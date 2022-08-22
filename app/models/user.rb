@@ -9,6 +9,8 @@ class User < ApplicationRecord
   validates :password, presence: true,
             length: {minimum: Settings.digits.length_password_min_6}
 
+  scope :sort_name, ->{order :name}
+
   before_save :downcase_email
 
   has_secure_password

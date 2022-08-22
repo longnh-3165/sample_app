@@ -7,14 +7,18 @@ vi:
   application:
     en: "Tiếng Anh"
     vi: "Tiếng Việt"
+  users:
+    not_found: "Không tìm thấy người dùng"
+    not_logged: "Vui lòng hãy đăng nhập."
+    unauthorization: "Bạn không có quyền thực hiện hành động này"
   layouts:
     header:
-      logo: "Sample App"
+      logo: "Ứng dụng mẫu"
       home: "Trang chủ"
       help: "Trợ giúp"
       log_in: "Đăng nhập"
       users: "Người dùng"
-      account: "Account"
+      account: "Tài khoản"
       profile: "Hồ sơ"
       settings: "Cài đặt"
       log_out: "Đăng xuất"
@@ -50,6 +54,12 @@ vi:
       second_intro: "Nhận hỗ trợ về ứng dụng mẫu, xem tại"
       book_link: "Sách Hướng dẫn Ruby on Rails"
   users:
+    index:
+      title: "Tất cả người sử dụng"
+      welcome: "Tất cả người sử dụng"
+    show:
+      delete: "Xóa bỏ"
+      delete_confirmation: "Bạn chắc chắn muốn xóa?"
     new:
       title: "Đăng ký"
       welcome: "Đăng ký"
@@ -58,9 +68,21 @@ vi:
       password: "Mật khẩu"
       password_confirmation: "Xác nhận lại mật khẩu"
       submit: "Tạo tài khoản"
+    edit:
+      title: "Cập nhật người dùng"
+      welcome: "Cập nhật người dùng"
+      first_intro: "Đây là trang cập nhật thông tin người dùng hiện tại."
+      name: "Tên"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận lại mật khẩu"
+      change: "Thay đổi"
+      submit: "Cập nhật tài khoản"
     create:
-      success_message: "Chào mừng đến với Ứng dụng mẫu!"
-      failure_message: "Đăng ký nguời dùng thất bại"
+      success_message: "Chào mừng đến với ứng dụng mẫu !"
+      failure_message: "Đăng ký thất bại !"
+    update:
+      success_message: "Cập nhật thành công !"
+      failure_message: "Cập nhật thất bại !"
   shared:
     error_messages:
       prefix: "Bạn có %{err_count} "
