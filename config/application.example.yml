@@ -1,0 +1,6 @@
+host: "address"
+host_email: "example@gmail.com"
+mail_user_name: "example"
+mail_user_password: "example"
+mail_address: "example"
+mail_port: "example"
