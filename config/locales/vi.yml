@@ -36,6 +36,7 @@ vi:
       first_intro: "Đây là trang chủ Ứng dụng mẫu của"
       second_intro: ""
       sign_up: "Đăng ký ngay nào!"
+      feed_title: "Trạng thái "
     about:
       title: "Thông tin"
       welcome: "Thông tin"
@@ -79,6 +80,20 @@ vi:
       password_confirmation: "Xác nhận lại mật khẩu"
       change: "Thay đổi"
       submit: "Cập nhật tài khoản"
+    follow:
+      follow: "Theo dõi"
+    unfollow:
+      unfollow: "Bỏ theo dõi"
+  followings:
+    index:
+      title: "Theo dõi"
+      not_found: "Không tìm thấy người dùng"
+      non_activated: "Người dùng chưa được kích hoạt"
+  followers:
+    index:
+      title: "Người theo dõi"
+      not_found: "Không tìm thấy người dùng"
+      non_activated: "Người dùng chưa được kích hoạt"
     create:
       success_message: "Chào mừng đến với ứng dụng mẫu !"
       confirm_message: "Check gmail để  hoàn tất thủ tục đăng kí"
@@ -97,6 +112,10 @@ vi:
     user_info:
       view_profile: "Xem hồ sơ của tôi"
       post_singular: "micropost"
+  users:
+    not_found: "Không tìm thấy người dùng"
+    not_logged: "Vui lòng hãy đăng nhập."
+    unauthorization: "Bạn không có quyền thực hiện hành động này"
   sessions:
     new:
       title: "Đăng nhập"

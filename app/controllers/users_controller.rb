@@ -54,7 +54,7 @@ class UsersController < ApplicationController
   private
 
   def find_by_user
-    @user = User.find_by id: params[:id]
+    find_user
     return if @user&.activated
 
     flash[:danger] = t ".not_found"

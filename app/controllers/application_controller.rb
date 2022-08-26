@@ -17,6 +17,23 @@ class ApplicationController < ActionController::Base
     redirect_to login_url
   end
 
+  def find_user
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    user_not_found
+  end
+
+  def user_not_found
+    flash[:danger] = t ".not_found"
+    redirect_to root_url
+  end
+
+  def user_not_activated
+    flash.now[:danger] = t ".non_activated"
+    redirect_to root_url
+  end
+
   def default_url_options
     {locale: I18n.locale}
   end
