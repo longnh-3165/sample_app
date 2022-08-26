@@ -1,10 +1,29 @@
 <% provide :title, t("home") %>
-<h1><%= t ".welcome" %></h1>
-<h2>
-  <%= t ".first_intro" %>
-  <u><%= link_to t("rails_tutorial_name"), help_path %></u>
-  <%= t ".second_intro" %>
-  <br>
-  <%= link_to t(".sign_up"), new_user_path, class: "btn btn-lg btn-primary" %>
-</h2>
-<%= link_to image_tag("rails.png", alt: "Rails logo", class: "home-logo"), Settings.links.rails_home %>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t ".feed_title" %></h3>
+      <%= render "shared/feed" %>
+      <%== pagy_bootstrap_nav @pagy %>
+    </div>
+  </div>
+<% else %>
+  <div class="center jumbotron">
+    <h1><%= t ".welcome" %></h1>
+    <h2>
+      <%= t ".first_intro" %>
+      <%= link_to t("rails_tutorial_name"), Settings.links.rails_help %>
+      <%= t ".second_intro" %>
+    </h2>
+    <%= link_to t(".sign_up"), signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+  <%= link_to image_tag("rails.png", alt: "Rails logo", class: "home-logo"), Settings.links.rails_home %>
+<% end %>
